@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Locaveis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Endereco</th>
+      <th>Preco</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @locaveis.each do |locavei| %>
+      <tr>
+        <td><%= locavei.id %></td>
+        <td><%= locavei.nome %></td>
+        <td><%= locavei.endereco %></td>
+        <td><%= locavei.preco %></td>
+        <td><%= locavei.email %></td>
+        <td><%= link_to 'Show', locavei %></td>
+        <td><%= link_to 'Edit', edit_locavei_path(locavei) %></td>
+        <td><%= link_to 'Destroy', locavei, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Locavei', new_locavei_path %>

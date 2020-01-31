@@ -1,0 +1,2 @@
+class Locavei < ApplicationRecord
+end

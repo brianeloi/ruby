@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @locavei.id %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @locavei.nome %>
+</p>
+
+<p>
+  <strong>Endereco:</strong>
+  <%= @locavei.endereco %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @locavei.preco %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @locavei.email %>
+</p>
+
+<%= link_to 'Edit', edit_locavei_path(@locavei) %> |
+<%= link_to 'Back', locaveis_path %>
